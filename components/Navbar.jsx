@@ -17,7 +17,7 @@ export default function Navbar() {
             About
           </a>
 
-          <a href="mailto:contact@email.com" className="nav-link">
+          <a href="mailto:jqhxnn@outlook.com" className="nav-link">
             Contact
           </a>
         </div>
