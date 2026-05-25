@@ -12,8 +12,8 @@ export default function Footer() {
           <p>Have a project in mind or just want to chat?</p>
           <p className="learning-tag">Still learning, but always open to connect.</p>
 
-          <a href="mailto:contact@email.com" className="mail">
-            contact@email.com
+          <a href="mailto:jqhxnn@outlook.com" className="mail">
+            jqhxnn@outlook.com
           </a>
         </div>
 
