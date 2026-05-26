@@ -10,19 +10,17 @@ export default function About() {
 
         <div className="about fade show">
           <p className="about-text">
-            Relatively new to JavaScript and web development. Got into coding
-            through Minecraft plugins back in the day, started by copying
-            tutorials, and now I'm slowly figuring out how everything actually
-            works. Currently focused on learning Next.js and getting comfortable
-            with the JavaScript ecosystem.
+            I started with coding because I wanted to make my own Minecraft plugin. 
+            At some point it worked and I saw the endless possibilities coding brings.
           </p>
 
           <p className="about-text">
-            Still very much a beginner, but excited to keep building and
-            learning. I spend way too much time on random projects and not
-            enough time finishing them, but I'm trying to be more intentional
-            about what I work on. Outside of code, probably doing something
-            random.
+            I’m currently learning Next.js but I’m also trying to optimise the performance of my projects.
+          </p>
+          
+          <p className="about-text">
+            One thing I’m proud of is my DonutCore, a public Minecraft core plugin I built with custom commands, 
+            server links integrations, and a bunch of other server utilities.
           </p>
 
           <div className="skills">
