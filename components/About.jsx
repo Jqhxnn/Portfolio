@@ -11,15 +11,16 @@ export default function About() {
         <div className="about fade show">
           <p className="about-text">
             I started with coding because I wanted to make my own Minecraft plugin. 
-            At some point it worked and I saw the endless possibilities coding brings.
+            At some point it worked and I saw the endless possibilities coding brings. 
+            So I continued learning.
           </p>
 
           <p className="about-text">
-            I’m currently learning Next.js but I’m also trying to optimise the performance of my projects.
+            I’m currently learning Next.js but also trying to optimise the performance of my projects.
           </p>
           
           <p className="about-text">
-            One thing I’m proud of is my DonutCore, a public Minecraft core plugin I built with custom commands, 
+            One thing I’m proud of is DonutCore, a public Minecraft core plugin I built with custom commands, 
             server links integrations, and a bunch of other server utilities.
           </p>
 
