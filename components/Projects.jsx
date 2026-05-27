@@ -22,8 +22,7 @@ export default function Projects() {
 
             <p>
               A Minecraft server core with modular features, custom commands,
-              and configuration systems. Been iterating on it for a while,
-              refactoring as I learn better patterns.
+              and server links integration. I update it sometimes when I have an idea for a feature.
             </p>
 
             <a
@@ -58,8 +57,7 @@ export default function Projects() {
 
             <p>
               This site. My first Next.js project, built while learning the
-              framework. The design changes every few months because I can never
-              stick with one direction, but at least it's getting better each time.
+              framework. I am always improving it as I learn more.
             </p>
 
             <a
