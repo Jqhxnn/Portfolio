@@ -100,7 +100,7 @@ a {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 120px 0px 80px;
+  padding: 120px 28px 80px;
   position: relative;
   z-index: 1;
 }
