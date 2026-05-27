@@ -100,13 +100,18 @@ a {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 120px 28px 80px;
+  padding-top: 120px;
+  padding-bottom: 80px;
   position: relative;
   z-index: 1;
 }
 
 .hero-box {
-  max-width: 540px;
+  width: 100%;
+  max-width: 720px;
+  margin: auto;
+  padding-left: 28px;
+  padding-right: 28px;
 }
 
 .hero h1 {
@@ -116,6 +121,7 @@ a {
   line-height: 1.05;
   letter-spacing: -0.02em;
   margin-bottom: 24px;
+  max-width: 540px;
 }
 
 .hero-desc {
