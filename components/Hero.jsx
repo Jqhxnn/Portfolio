@@ -3,7 +3,7 @@
 export default function Hero() {
   return (
     <section className="hero">
-      <div className="hero-box fade show container">
+      <div className="hero-box fade show">
         <h1>Jqhxnn</h1>
 
         <p className="hero-desc">
