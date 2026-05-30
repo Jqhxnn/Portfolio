@@ -9,7 +9,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-content fade show">
-          <p>Have a project in mind or just want to chat?</p>
+          <p>Have a project in mind?</p>
           <p className="learning-tag">Still learning, but always open to connect.</p>
 
           <a href="mailto:jqhxnn@outlook.com" className="mail">
