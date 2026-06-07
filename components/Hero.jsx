@@ -9,11 +9,9 @@ export default function Hero() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    // Only set hasWaved on mount if localStorage has it
     const waved = localStorage.getItem("waved");
     if (waved) {
       setHasWaved(true);
-      // Also try to restore the wave count if available
       const savedCount = localStorage.getItem("waveCount");
       if (savedCount) {
         setWaveCount(parseInt(savedCount));
@@ -84,7 +82,7 @@ export default function Hero() {
             {loading
               ? "..."
               : hasWaved && waveCount !== null
-              ? `You are the ${waveCount} Wave 👋`
+              ? `You are Wave #${waveCount} 👋`
               : "👋 Wave"}
           </button>
         </div>
