@@ -76,16 +76,10 @@ export default function Hero() {
             {loading
               ? "..."
               : hasWaved
-              ? "✔ Waved"
+              ? "You are the {waveCount} Wave 👋"
               : "👋 Wave"}
           </button>
         </div>
-
-        {waveCount !== null && (
-          <p className="wave-text">
-            You are the {waveCount} Wave 👋
-          </p>
-        )}
 
         {error && (
           <p className="wave-error" style={{ color: "red", marginTop: "10px" }}>
