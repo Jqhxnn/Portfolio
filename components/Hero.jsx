@@ -75,8 +75,8 @@ export default function Hero() {
           >
             {loading
               ? "..."
-              : hasWaved
-              ? "You are the {waveCount} Wave 👋"
+              : hasWaved && waveCount !== null
+              ? `You are the ${waveCount} Wave 👋`
               : "👋 Wave"}
           </button>
         </div>
