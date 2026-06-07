@@ -72,7 +72,7 @@ export default function Hero() {
 
         {waveCount !== null && (
           <p className="wave-text">
-            You are wave #{waveCount} 👋
+            You are the {waveCount} Wave 👋
           </p>
         )}
       </div>
