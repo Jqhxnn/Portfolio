@@ -9,8 +9,15 @@ export default function Hero() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    if (localStorage.getItem("waved")) {
+    // Only set hasWaved on mount if localStorage has it
+    const waved = localStorage.getItem("waved");
+    if (waved) {
       setHasWaved(true);
+      // Also try to restore the wave count if available
+      const savedCount = localStorage.getItem("waveCount");
+      if (savedCount) {
+        setWaveCount(parseInt(savedCount));
+      }
     }
   }, []);
 
@@ -38,6 +45,7 @@ export default function Hero() {
       setWaveCount(data.count);
       setHasWaved(true);
       localStorage.setItem("waved", "true");
+      localStorage.setItem("waveCount", data.count.toString());
     } catch (err) {
       console.error("Wave failed:", err);
       setError(err.message);
