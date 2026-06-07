@@ -6,6 +6,7 @@ export default function Hero() {
   const [waveCount, setWaveCount] = useState(null);
   const [loading, setLoading] = useState(false);
   const [hasWaved, setHasWaved] = useState(false);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     if (localStorage.getItem("waved")) {
@@ -17,19 +18,29 @@ export default function Hero() {
     if (hasWaved) return;
 
     setLoading(true);
+    setError(null);
 
     try {
+      console.log("Waving...");
       const res = await fetch("/api/wave", {
         method: "POST",
       });
 
+      console.log("Response status:", res.status);
+
+      if (!res.ok) {
+        throw new Error(`API error: ${res.status}`);
+      }
+
       const data = await res.json();
+      console.log("Wave count:", data.count);
 
       setWaveCount(data.count);
       setHasWaved(true);
       localStorage.setItem("waved", "true");
     } catch (err) {
       console.error("Wave failed:", err);
+      setError(err.message);
     }
 
     setLoading(false);
@@ -73,6 +84,12 @@ export default function Hero() {
         {waveCount !== null && (
           <p className="wave-text">
             You are the {waveCount} Wave 👋
+          </p>
+        )}
+
+        {error && (
+          <p className="wave-error" style={{ color: "red", marginTop: "10px" }}>
+            Error: {error}
           </p>
         )}
       </div>
