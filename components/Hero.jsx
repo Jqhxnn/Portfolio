@@ -1,12 +1,21 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Hero() {
   const [waveCount, setWaveCount] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [hasWaved, setHasWaved] = useState(false);
+
+  useEffect(() => {
+    if (localStorage.getItem("waved")) {
+      setHasWaved(true);
+    }
+  }, []);
 
   async function handleWave() {
+    if (hasWaved) return;
+
     setLoading(true);
 
     try {
@@ -17,6 +26,8 @@ export default function Hero() {
       const data = await res.json();
 
       setWaveCount(data.count);
+      setHasWaved(true);
+      localStorage.setItem("waved", "true");
     } catch (err) {
       console.error("Wave failed:", err);
     }
@@ -46,13 +57,23 @@ export default function Hero() {
             GitHub
           </a>
 
-          <button onClick={handleWave} disabled={loading} className="btn">
-            {loading ? "..." : "👋 Wave"}
+          <button
+            onClick={handleWave}
+            disabled={loading || hasWaved}
+            className="btn"
+          >
+            {loading
+              ? "..."
+              : hasWaved
+              ? "✔ Waved"
+              : "👋 Wave"}
           </button>
         </div>
 
         {waveCount !== null && (
-          <p className="wave-text">You are wave #{waveCount} 👋</p>
+          <p className="wave-text">
+            You are wave #{waveCount} 👋
+          </p>
         )}
       </div>
     </section>
