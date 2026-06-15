@@ -68,7 +68,7 @@ export default function Music() {
               {track.name}
             </a>
             <span className="artist-name">{track.artist?.['#text'] || track.artist}</span>
-            {track.album && <span className="album-name">{track.album}</span>}
+            {track.album && <span className="album-name">{track.album?.['#text'] || track.album}</span>}
           </div>
         </div>
       ) : (
