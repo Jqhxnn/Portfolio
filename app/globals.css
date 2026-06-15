@@ -315,6 +315,11 @@ a {
   z-index: 1;
 }
 
+.footer--minimal {
+  border-top: none;
+  padding-top: 0;
+}
+
 .footer-content {
   margin-bottom: 16px;
 }
@@ -563,4 +568,124 @@ a {
 .music-empty {
   font-size: 12px;
   padding: 10px 0;
+}
+
+/* Privacy Page Styles */
+.privacy-page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 120px 24px 80px;
+}
+
+.privacy-content h1.page-title {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 24px;
+  color: var(--text);
+}
+
+.privacy-content .intro-text {
+  color: var(--muted);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.privacy-content h2 {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text);
+  margin-top: 48px;
+  margin-bottom: 16px;
+}
+
+.privacy-services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.privacy-service-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 18px 20px;
+  border-radius: 4px;
+  transition: border-color 0.15s ease;
+}
+
+.privacy-service-card:hover {
+  border-color: var(--border-hover);
+}
+
+.privacy-service-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.privacy-service-name {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.privacy-service-category {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted-light);
+}
+
+.privacy-service-description {
+  color: var(--muted);
+  line-height: 1.6;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.privacy-service-link {
+  color: var(--accent);
+  font-size: 12px;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.privacy-service-link:hover {
+  color: var(--accent-hover);
+}
+
+.privacy-content h3 {
+  display: none;
+}
+
+.privacy-content .service-purpose {
+  display: none;
+}
+
+.privacy-content .service-description {
+  color: var(--muted);
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.privacy-content .privacy-link {
+  color: var(--accent);
+  font-size: 13px;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.privacy-content .privacy-link:hover {
+  color: var(--accent-hover);
+}
+
+@media (min-width: 640px) {
+  .privacy-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

@@ -1,21 +1,30 @@
 "use client";
 
-export default function Footer() {
+import { usePathname } from "next/navigation";
+
+export default function Footer({ showGetInTouch = true, showProjectSection = true }) {
+  const pathname = usePathname();
+  const isPrivacyPage = pathname === "/privacy";
+
   return (
-    <footer className="footer">
+    <footer className={`footer${isPrivacyPage ? " footer--minimal" : ""}`}>
       <div className="container">
-        <div className="section-top fade show">
-          <h2>Get in Touch</h2>
-        </div>
+        {showGetInTouch && (
+          <div className="section-top fade show">
+            <h2>Get in Touch</h2>
+          </div>
+        )}
 
-        <div className="footer-content fade show">
-          <p>Have a project in mind?</p>
-          <p className="learning-tag">Still learning, but always open to connect.</p>
+        {showProjectSection && (
+          <div className="footer-content fade show">
+            <p>Have a project in mind?</p>
+            <p className="learning-tag">Still learning, but always open to connect.</p>
 
-          <a href="mailto:jqhxnn@outlook.com" className="mail">
-            jqhxnn@outlook.com
-          </a>
-        </div>
+            <a href="mailto:jqhxnn@outlook.com" className="mail">
+              jqhxnn@outlook.com
+            </a>
+          </div>
+        )}
 
         <div className="footer-bottom fade show">
           <p className="copyright">© 2026 Jqhxnn</p>
@@ -27,6 +36,9 @@ export default function Footer() {
               className="social-link"
             >
               GitHub
+            </a>
+            <a href="/privacy" className="social-link">
+              Privacy
             </a>
           </div>
 
