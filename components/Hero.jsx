@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Music from "./Music";
 
 export default function Hero() {
   const [waveCount, setWaveCount] = useState(null);
@@ -86,6 +87,8 @@ export default function Hero() {
               : "👋 Wave"}
           </button>
         </div>
+
+        <Music />
 
         {error && (
           <p className="wave-error" style={{ color: "red", marginTop: "10px" }}>
