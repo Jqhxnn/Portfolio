@@ -116,7 +116,8 @@ export default function Projects() {
           </div>
         </div>
 
-        <br \><div style={{ textAlign: "center" }}>
+        <br />
+        <div style={{ textAlign: "center" }}>
           <Link href="/projects" className="project-link">
             View All Projects
             <svg
