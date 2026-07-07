@@ -126,11 +126,46 @@ export default function Projects() {
             </a>
           </div>
           </div>
+					
+					<div className="project fade show">
+              <div className="project-top">
+                <span className="project-year">2025</span>
+                <div className="project-tags">
+                  <span className="tech-tag">Java</span>
+                  <span className="tech-tag">Spigot</span>
+                </div>
+              </div>
+
+              <h3>BlockPreventer</h3>
+
+              <p>
+                BlockPreventer is a Minecraft plugin that disabled block breaking for players.
+              </p>
+
+              <a
+                href="https://github.com/Jqhxnn/BlockPreventer"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link"
+              >
+                View Project
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M7 17L17 7M17 7H7M17 7V17" />
+                </svg>
+              </a>
+            </div>
 
         </div>
       </section>
 
-      <Footer showGetInTouch={false} showProjectSection={false} />
+      <Footer showGetInTouch={true} showProjectSection={false} />
     </>
   );
 }
