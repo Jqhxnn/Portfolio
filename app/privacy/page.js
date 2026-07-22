@@ -199,7 +199,7 @@ export default function Privacy() {
           </div>
         </section>
 
-      <Footer showGetInTouch={false} showProjectSection={false} />
+      <Footer />
     </>
   );
 }
