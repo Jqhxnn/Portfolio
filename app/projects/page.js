@@ -167,7 +167,7 @@ export default function Projects() {
         </div>
       </section>
 
-      <Footer showGetInTouch={true} showProjectSection={false} />
+      <Footer showGetInTouch={true} showProjectSection={true} />
     </>
   );
 }
