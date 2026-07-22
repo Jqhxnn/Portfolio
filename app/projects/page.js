@@ -125,6 +125,7 @@ export default function Projects() {
               </svg>
             </a>
           </div>
+					
           </div>
 					
 					<div className="project fade show">
