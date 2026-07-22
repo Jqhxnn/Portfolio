@@ -13,13 +13,11 @@ export default function Projects() {
 
       <section id="projects" className="section">
         <div className="container">
-
           <div className="section-top fade show">
             <h1>Projects</h1>
           </div>
 
           <div className="projects">
-
             <div className="project fade show">
               <div className="project-top">
                 <span className="project-year">2026</span>
@@ -161,13 +159,11 @@ export default function Projects() {
                 </svg>
               </a>
             </div>
-
           </div>
-
         </div>
       </section>
 
-      <Footer showGetInTouch={true} showProjectSection={true} />
+      <Footer />
     </>
   );
 }
