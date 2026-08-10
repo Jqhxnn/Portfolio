@@ -43,7 +43,7 @@ export default function Privacy() {
                 <h3>Google Fonts</h3>
 
                 <p>
-                  This site uses the IBM Plex Mono and Inter typefaces provided by Google Fonts. When fonts are loaded from Google's servers, Google may receive technical information such as your IP address and browser details as part of the request.
+                  This site uses the IBM Plex Mono and Inter typefaces provided by Google Fonts. When fonts are loaded from Google&#39;s servers, Google may receive technical information such as your IP address and browser details as part of the request.
                 </p>
 
                 <a
@@ -136,7 +136,6 @@ export default function Privacy() {
                 </a>
               </div>
 
-              {/* Vercel */}
               <div className="project fade show">
                 <div className="project-top">
                   <span className="project-year">Service</span>

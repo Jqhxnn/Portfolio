@@ -22,6 +22,8 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-color: var(--accent);
+  scrollbar-width: auto;
 }
 
 body {
@@ -31,6 +33,11 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: rgba(124, 154, 110, 1);
+  color: #201d1a;
 }
 
 a {

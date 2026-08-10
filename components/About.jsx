@@ -10,9 +10,10 @@ export default function About() {
 
         <div className="about fade show">
           <p className="about-text">
-            I started with coding because I wanted to make my own Minecraft plugin. 
-            At some point it worked and I saw the endless possibilities coding brings. 
-            So I continued learning.
+            I started coding because I wanted to create my own Minecraft plugin and at
+            some point it worked and I realised the endless possibilities coding brings.
+            After coding the first few plugins I came across YouTube tutorials showing how to code websites and I thought it
+            looks easy so I started it and build some projects from tutorials.
           </p>
 
           <p className="about-text">
