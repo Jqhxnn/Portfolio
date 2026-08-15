@@ -8,6 +8,6 @@ export default function robots() {
             ],
             disallow: '/privacy',
         },
-        sitemap: 'https://jqhxnn.vercel.app/sitemap.xml',
+        sitemap: 'https://jqhxnn.me/sitemap.xml',
     }
 }
