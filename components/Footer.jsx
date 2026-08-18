@@ -20,8 +20,8 @@ export default function Footer({ showGetInTouch = true, showProjectSection = tru
             <p>Have a project in mind?</p>
             <p className="learning-tag">Still learning, but always open to connect.</p>
 
-            <a href="mailto:jqhxnn@outlook.com" className="mail">
-              jqhxnn@outlook.com
+            <a href="mailto:contact@jqhxnn.me" className="mail">
+              contact@jqhxnn.me
             </a>
           </div>
         )}

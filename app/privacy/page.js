@@ -190,8 +190,8 @@ export default function Privacy() {
               <br /><br />
               Johann Schneider<br />
               E-Mail:{" "}
-              <a href="mailto:jqhxnn@outlook.com" className="mail">
-                jqhxnn@outlook.com
+              <a href="mailto:contact@jqhxnn.me" className="mail">
+                contact@jqhxnn.me
               </a>
             </p>
 
