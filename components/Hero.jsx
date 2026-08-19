@@ -58,9 +58,12 @@ export default function Hero() {
       <div className="hero-box fade show">
         <h1>Jqhxnn</h1>
 
+        <p className="hero-role">
+          web developer · minecraft plugin dev
+        </p>
+
         <p className="hero-desc">
-          Started coding through Minecraft plugins. Now exploring web
-          development with Next.js.
+          Focused on Minecraft infrastructure, performance, and fast web applications.
         </p>
 
         <p className="location">Germany</p>

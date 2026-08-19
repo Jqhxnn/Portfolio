@@ -194,10 +194,8 @@ export default function Privacy() {
                 contact@jqhxnn.me
               </a>
             </p>
-
           </div>
         </section>
-
       <Footer />
     </>
   );
