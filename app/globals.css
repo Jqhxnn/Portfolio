@@ -18,12 +18,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scrollbar-color: #7c9a6e transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #7c9a6e;
 }
 
 html {
   scroll-behavior: smooth;
-  scrollbar-color: var(--accent);
-  scrollbar-width: auto;
 }
 
 body {
