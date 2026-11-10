@@ -2,7 +2,7 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 
 export const metadata = {
-  title: "Privacy",
+  title: "Privacy - Jqhxnn",
   description: "Privacy policy and third-party services used on this portfolio.",
 };
 

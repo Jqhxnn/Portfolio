@@ -6,7 +6,7 @@ import "./globals.css";
 const geist = Geist({ subsets: ["latin"], variable: "--font-geist" });
 
 export const metadata = {
-  title: "Jqhxnn - Portfolio",
+  title: "Portfolio - Jqhxnn",
   description:
     "JavaScript developer from Germany learning Next.js. Building things to figure out how they work.",
     keywords: [
@@ -28,7 +28,7 @@ export const metadata = {
         type: "website",
         url: "https://jqhxnn.me",
         siteName: "jqhxnn",
-        title: "Jqhxnn - Portfolio",
+        title: "Portfolio - Jqhxnn",
         description:
             "JavaScript developer from Germany learning Next.js. Building things to figure out how they work.",
         images: [
@@ -42,7 +42,7 @@ export const metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "Jqhxnn - Portfolio",
+        title: "Portfolio - Jqhxnn",
         description:
             "JavaScript developer from Germany learning Next.js. Building things to figure out how they work.",
         images: ["/logo.webp"],
