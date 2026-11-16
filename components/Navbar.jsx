@@ -9,8 +9,8 @@ export default function Navbar() {
         </a>
 
         <div className="links">
-          <a href="/#work" className="nav-link">
-            Work
+          <a href="/projects" className="nav-link">
+            Projects
           </a>
 
           <a href="/#about" className="nav-link">

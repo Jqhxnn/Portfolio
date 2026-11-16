@@ -14,6 +14,9 @@ export default function Projects() {
       <section id="projects" className="section">
         <div className="container">
           <div className="section-top fade show">
+            <br />
+            <br />
+            <br />
             <h1>Projects</h1>
           </div>
 
